@@ -9,6 +9,10 @@ body {
   margin: 0px;
 }
 
+footer {
+  background-color: #353535;
+}
+
 h2 {
   font-family: "Roboto";
   font-size: 24px;
@@ -58,8 +62,11 @@ p {
   /** EXPLORATION **/
   .expl {
     text-align: center;
+    align-items: center;
     padding: 32px;
     background-color: #F6F6F6;
+    display: flex;
+    flex-direction: column;
   }
   .expl__text {
     margin: 0;
@@ -87,6 +94,7 @@ p {
   }
   .expl__btn:hover {
     background-color: white;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
   }
   /** FONCTIONNEMENT**/
   .fonct {
@@ -128,9 +136,15 @@ p {
 .restaurants {
   display: grid;
   background: #F6F6F6;
+  /** FOOTER **/
+}
+.restaurants h2 {
+  margin: 0;
 }
 .restaurants__container {
-  padding: 22px 18px;
+  padding: 50px 18px;
+  display: grid;
+  gap: 18px;
 }
 .restaurants__card {
   text-decoration: none;
@@ -164,4 +178,21 @@ p {
   border-radius: 15px;
   width: 100%;
   height: auto;
+}
+.restaurants footer__container {
+  display: flex;
+  width: 375px;
+  padding: 22px 25px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+.restaurants footer__container__title {
+  color: white;
+}
+.restaurants footer__link {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: white;
 }/*# sourceMappingURL=style.css.map */

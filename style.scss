@@ -9,6 +9,10 @@ body{
     margin:0px;
 }
 
+footer{
+    background-color:#353535;
+}
+
 h2{
     font-family: "Roboto";
     font-size: 24px;
@@ -59,8 +63,11 @@ header{
 /** EXPLORATION **/
 .expl{
     text-align: center;
+    align-items: center;
     padding: 32px;
     background-color: #F6F6F6;
+    display: flex;
+    flex-direction: column;
     
     &__text{
         margin: 0;
@@ -88,6 +95,7 @@ header{
     }
     &__btn:hover{
         background-color: white;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.50);
     }
 }
 /** FONCTIONNEMENT**/
@@ -134,10 +142,13 @@ header{
 .restaurants{
     display: grid;
     background: #F6F6F6;
-
+    & h2{
+        margin: 0;
+    }
     &__container{
-        padding: 22px 18px;
-        
+        padding: 50px 18px;
+        display: grid;
+        gap:18px;
     }
     &__card{
         text-decoration: none;
@@ -172,6 +183,28 @@ header{
     height:auto;
     }
 
+    /** FOOTER **/
+
+footer{
+        
+    &__container{
+        display: flex;
+        width: 375px;
+        padding: 22px 25px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        &__title{
+            color:white;
+        }
     }
+    &__link{
+        list-style: none;
+        padding: 0;
+        margin:0;
+        color:white;
+    }
+}    
+}
 
 
