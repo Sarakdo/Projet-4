@@ -1,3 +1,45 @@
+footer {
+  background-color: #353535;
+}
+
+@media screen and (max-width: 768px) {
+  /** PAGE PRINCIPAL MENU **/
+  .containermenu {
+    background-color: #f6f6f6;
+    position: relative;
+  }
+  .resto {
+    max-width: 100%;
+    overflow: hidden;
+    padding: 0 1rem;
+  }
+  .resto__title {
+    font-family: "Shrikhand", cursive;
+    font-size: 28px;
+  }
+  .menuinfo {
+    max-width: 100%;
+    overflow: hidden;
+    padding: 0 1rem;
+  }
+  .menuinfo__menucat {
+    font-family: "Roboto", "cursive";
+    font-size: 16px;
+  }
+  .menuitems {
+    background-color: #fff;
+    padding: 15px;
+    display: flex;
+    border-radius: 15px;
+    box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    max-width: 100%;
+  }
+  .menuinfo__menutitle {
+    font-family: "Roboto";
+    font-size: 18px;
+  }
+}
 /** GENERAL **/
 *,
 :before,
@@ -132,6 +174,7 @@ p {
     align-items: center;
     justify-content: center;
     position: absolute;
+    left: -10px;
   }
   .fonct__icon {
     margin-right: 12px;

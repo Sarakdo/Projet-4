@@ -1,0 +1,43 @@
+footer {
+    background-color: #353535;
+}
+
+@media screen and (max-width: 768px) {
+    
+
+/** PAGE PRINCIPAL MENU **/
+.containermenu{
+    background-color: #f6f6f6;
+    position: relative;
+    &__title{
+        font-family: "Shrikhand";
+        font-size: 28px;
+    }
+}
+
+.resto{
+    max-width: 100%;
+    overflow: hidden;
+    padding: 0 1rem;
+}
+.menuinfo{
+    max-width: 100%;
+    overflow: hidden;
+    padding: 0 1rem;
+    &__menucat{
+        font-family: "Roboto";
+        font-size: 16px;
+    }
+}
+
+.menuitems{
+    background-color: #fff;
+    padding: 15px;
+    display: flex;
+    border-radius: 15px;
+    box-shadow: 0.25rem 0.25rem 1rem rgba(0,0,0,.1);
+    cursor: pointer;
+    max-width: 100%;
+    }
+
+}
