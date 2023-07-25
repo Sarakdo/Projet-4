@@ -136,7 +136,6 @@ p {
 .restaurants {
   display: grid;
   background: #F6F6F6;
-  /** FOOTER **/
 }
 .restaurants h2 {
   margin: 0;
@@ -179,10 +178,9 @@ p {
   width: 100%;
   height: auto;
 }
-.restaurants footer__logo {
-  color: white;
-}
-.restaurants footer__container {
+
+/** FOOTER **/
+footer .container {
   display: flex;
   width: 375px;
   padding: 22px 25px;
@@ -190,12 +188,12 @@ p {
   align-items: flex-start;
   gap: 16px;
 }
-.restaurants footer__container__link {
+footer__logo {
+  color: white;
+}
+footer__link {
   list-style: none;
   padding: 0;
   margin: 0;
-  color: white;
-}
-.restaurants footer__container__logo {
   color: white;
 }/*# sourceMappingURL=style.css.map */
