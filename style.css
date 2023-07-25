@@ -8,14 +8,14 @@ footer {
     background-color: #f6f6f6;
     position: relative;
   }
+  .containermenu__title {
+    font-family: "Shrikhand";
+    font-size: 28px;
+  }
   .resto {
     max-width: 100%;
     overflow: hidden;
     padding: 0 1rem;
-  }
-  .resto__title {
-    font-family: "Shrikhand", cursive;
-    font-size: 28px;
   }
   .menuinfo {
     max-width: 100%;
@@ -23,7 +23,7 @@ footer {
     padding: 0 1rem;
   }
   .menuinfo__menucat {
-    font-family: "Roboto", "cursive";
+    font-family: "Roboto";
     font-size: 16px;
   }
   .menuitems {
@@ -35,11 +35,11 @@ footer {
     cursor: pointer;
     max-width: 100%;
   }
-  .menuinfo__menutitle {
-    font-family: "Roboto";
-    font-size: 18px;
-  }
 }
+body {
+  background-color: red;
+}
+
 /** GENERAL **/
 *,
 :before,
