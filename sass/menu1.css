@@ -1,38 +1,49 @@
-footer {
-  background-color: #353535;
-}
-
 @media screen and (max-width: 768px) {
-  /** PAGE PRINCIPAL MENU **/
+  .restoimg {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    max-height: 1440px;
+  }
   .containermenu {
+    margin-top: -4rem;
+    border-radius: 2rem 2rem 0 0;
     background-color: #f6f6f6;
+    z-index: 1;
     position: relative;
   }
   .containermenu__title {
-    font-family: "Shrikhand";
+    font-family: "Shrikhand", cursive;
     font-size: 28px;
+    padding: 23px 0 0 10px;
   }
-  .resto {
+  .allmenu {
+    display: flex;
+    max-width: 100%;
+    padding: 0 1rem;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .allmenu__info {
     max-width: 100%;
     overflow: hidden;
-    padding: 0 1rem;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    flex-direction: column;
   }
-  .menuinfo {
-    max-width: 100%;
-    overflow: hidden;
-    padding: 0 1rem;
+  .menuitems__info {
+    display: flex;
+    width: 349px;
+    height: 69px;
+    align-items: center;
+    border-radius: 15px;
+    background: #FFF;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
   }
-  .menuinfo__menucat {
+  .menuitems__info__menutext {
     font-family: "Roboto";
     font-size: 16px;
-  }
-  .menuitems {
-    background-color: #fff;
-    padding: 15px;
-    display: flex;
-    border-radius: 15px;
-    box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    max-width: 100%;
   }
 }/*# sourceMappingURL=menu1.css.map */
