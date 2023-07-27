@@ -1,81 +1,3 @@
-header .iconleft {
-  position: absolute;
-  left: 22px;
-  top: 22px;
-  cursor: pointer;
-}
-
-@media screen and (max-width: 768px) {
-  .restoimg {
-    -o-object-fit: cover;
-       object-fit: cover;
-    max-width: 100%;
-  }
-  .containermenu {
-    margin-top: -4rem;
-    border-radius: 2rem 2rem 0 0;
-    background-color: #f6f6f6;
-    z-index: 1;
-    position: relative;
-  }
-  .containermenu__title h2 {
-    font-family: "Shrikhand", cursive;
-    font-size: 28px;
-    padding: 23px 0 0 10px;
-  }
-  .allmenu {
-    display: flex;
-    max-width: 100%;
-    padding: 0 1rem;
-    flex-direction: column;
-    gap: 40px;
-  }
-  .allmenu__info {
-    max-width: 100%;
-    overflow: hidden;
-    flex: 1;
-    display: flex;
-    justify-content: space-between;
-    gap: 12px;
-    flex-direction: column;
-  }
-  .menuitems {
-    display: grid;
-    background-color: #FFF;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
-  }
-  .menuitems__info {
-    display: flex;
-    margin: 1rem 0;
-    border-radius: 20px;
-    padding: 15px;
-    overflow: hidden;
-    cursor: pointer;
-    max-width: 100%;
-    margin: 0;
-    gap: 5px;
-    justify-content: space-between;
-  }
-  .menuitems__title {
-    margin: 0;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-  }
-  .menuitems__subtitle {
-    margin: 0;
-    font-size: 15px;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-  }
-  .menuitems__text {
-    padding-left: 10px;
-  }
-  .menuitems__price {
-    font-weight: bold;
-  }
-}
 /** GENERAL **/
 *,
 :before,
@@ -309,4 +231,4 @@ p {
 }
 .footer__icon {
   padding-right: 7px;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=base.css.map */

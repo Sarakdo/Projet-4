@@ -1,9 +1,18 @@
+header {
+    .iconleft {
+        position: absolute;
+        left: 22px;
+        top: 22px;
+        cursor: pointer;
+    }
+}
+
+
 @media screen and (max-width: 768px) {
 
     .restoimg {
         object-fit: cover;
-        width: 100%;
-        max-height: 1440px;
+        max-width: 100%;
     }
 
     .containermenu {
@@ -13,7 +22,7 @@
         z-index: 1;
         position: relative;
 
-        &__title {
+        &__title h2 {
             font-family: "Shrikhand", cursive;
             font-size: 28px;
             padding: 23px 0 0 10px;
@@ -25,10 +34,9 @@
         max-width: 100%;
         padding: 0 1rem;
         flex-direction: column;
-        gap:40px;
+        gap: 40px;
 
-        &__info{
-            
+        &__info {
             max-width: 100%;
             overflow: hidden;
             flex: 1;
@@ -36,24 +44,49 @@
             justify-content: space-between;
             gap: 12px;
             flex-direction: column;
-            
+
         }
     }
 
-.menuitems{
-    &__info{
+    .menuitems {
         display: flex;
-        width: 349px;
-        height: 69px;
-        align-items: center;
-        border-radius: 15px;
-        background:#FFF;
+        background-color:#FFF;
         box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
+        border-radius: 15px;
+        &__info{
+        display: flex;
+        margin: 1rem 0;
+        border-radius: 20px;
+        padding: 15px;
+        overflow: hidden;
+        cursor: pointer;
+        max-width: 100%;
+        margin:0;
+        gap:5px;
+        justify-content: space-between;
+        }
+        &__title {
+            margin: 0;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            font-size: 18px;
+        }
+        
+        &__subtitle {
+            margin: 0;
+            font-size: 15px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
 
-    &__menutext {
-                font-family: "Roboto";
-                font-size: 16px;
+        &__text {
+            padding-left: 10px;
+        }
+        &__price{
+            font-weight: bold;
+            font-size: 15px;
+        }
     }
-}
-}
-}
+    }
