@@ -30,6 +30,20 @@ header .iconleft {
     flex-direction: column;
     gap: 40px;
   }
+  .allmenu__title {
+    position: relative;
+    padding-bottom: 0.5rem;
+    font-weight: 400;
+  }
+  .allmenu__title :after {
+    content: "";
+    width: 3rem;
+    height: 0.25rem;
+    background-color: #99e2d0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
   .allmenu__info {
     max-width: 100%;
     overflow: hidden;

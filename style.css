@@ -7,8 +7,7 @@ header .iconleft {
 
 @media screen and (max-width: 768px) {
   .restoimg {
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     max-width: 100%;
   }
   .containermenu {
@@ -30,6 +29,20 @@ header .iconleft {
     flex-direction: column;
     gap: 40px;
   }
+  .allmenu__title {
+    position: relative;
+    padding-bottom: 0.5rem;
+    font-weight: 400;
+  }
+  .allmenu__title :after {
+    content: "";
+    width: 3rem;
+    height: 0.25rem;
+    background-color: #99e2d0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
   .allmenu__info {
     max-width: 100%;
     overflow: hidden;
@@ -40,9 +53,10 @@ header .iconleft {
     flex-direction: column;
   }
   .menuitems {
-    display: grid;
+    display: flex;
     background-color: #FFF;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
   }
   .menuitems__info {
     display: flex;
@@ -61,6 +75,7 @@ header .iconleft {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+    font-size: 18px;
   }
   .menuitems__subtitle {
     margin: 0;
@@ -74,6 +89,7 @@ header .iconleft {
   }
   .menuitems__price {
     font-weight: bold;
+    font-size: 15px;
   }
 }
 /** GENERAL **/
@@ -253,8 +269,7 @@ p {
   border: 0 solid transparent;
   border-radius: 15px 15px 0px 0px;
   box-shadow: none;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .restaurants__card h3 {
   font-family: "Roboto";
@@ -309,4 +324,6 @@ p {
 }
 .footer__icon {
   padding-right: 7px;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
