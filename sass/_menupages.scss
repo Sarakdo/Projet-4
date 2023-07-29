@@ -1,0 +1,159 @@
+header {
+
+    .iconleft {
+        position: absolute;
+        left: 22px;
+        top: 22px;
+        cursor: pointer;
+    }
+}
+
+.restoimg {
+    object-fit: cover;
+    width: 100%;
+    height: 275px;
+}
+
+.containermenu {
+    margin-top: -4rem;
+    border-radius: 2rem 2rem 0 0;
+    background-color: #f6f6f6;
+    z-index: 1;
+    position: relative;
+
+    &__title h2 {
+        font-family: "Shrikhand", cursive;
+        font-size: 28px;
+        padding: 23px 0 0 10px;
+    }
+}
+
+.allmenu {
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    gap: 40px;
+
+    &__title {
+        position: relative;
+        font-weight: 400;
+        margin: 0;
+    }
+
+    &__info {
+        max-width: 100%;
+        overflow: hidden;
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        position: relative;
+
+        & h3 {
+            padding-left: 16px;
+            padding-bottom: 19px;
+
+            &::after {
+                content: "";
+                border-bottom: 5px solid #99E2D0;
+                width: 40px;
+                height: 3px;
+                position: absolute;
+                left: 16px;
+                top: 26px;
+            }
+        }
+    }
+}
+
+.menuitems {
+    &__info {
+        display: flex;
+        padding: 15px;
+        overflow: hidden;
+        cursor: pointer;
+        max-width: 100%;
+        gap: 5px;
+        justify-content: space-between;
+        background-color: #FFF;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
+        border-radius: 15px;
+        margin: 4px 16px;
+
+    }
+
+    &__text {
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    &__title {
+        margin: 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        font-size: 18px;
+        font-family: "roboto";
+        font-weight: 500;
+
+    }
+
+    &__subtitle {
+        margin: 0;
+        font-size: 15px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    &__price {
+        font-weight: bold;
+        font-size: 15px;
+        margin-bottom: 0;
+    }
+}
+
+.wrapbtn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.commandbtn {
+    width: 186px;
+    height: 50px;
+    border: 0;
+    padding: 13px 18px;
+    font-size: 1.1rem;
+    border-radius: 100px;
+    color: #fff;
+    background-color: #686868;
+    background-image: linear-gradient(0deg, rgba(147, 86, 220, .9), rgba(255, 121, 218, .9));
+    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, .25);
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Roboto";
+    width: 218px;
+    text-align: center;
+
+    &:hover {
+        background-color: white;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.50);
+
+    }
+}
+
+
+
+@media screen and (min-width: 768px) {
+    header {
+
+        .iconleft {
+            position: absolute;
+            left: 22px;
+            top: 22px;
+            cursor: pointer;
+        }
+    }
+}
