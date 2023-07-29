@@ -12,7 +12,7 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Oh My Food</title>
-    <link rel="stylesheet" href="styles/style.scss">
+    <link rel="stylesheet" href="/styles/style.css">
 </head>
 
 <body>
@@ -32,7 +32,7 @@
         <section class="expl">
             <h2 class="expl__text">Réservez le menu qui <br> vous convient</h2>
             <p class="expl__subt">Découvrez des restaurants d'exception,<br> sélectionnés par nos soins.</p>
-            <a class="expl__btn">Explorer nos restaurants</a>
+            <span class="expl__btn">Explorer nos restaurants</span>
         </section>
 
         <section class="fonct">
@@ -62,18 +62,29 @@
                 <h2 class="restaurants__title">Restaurants</h2>
 
                 <div class="restaurants__cards">
-                    <a class="restaurants__card" href="pages/resto-1.html">
+                    <a class="restaurants__card"href="pages/resto-1.html">
                         <img src="images/restaurants/menu-1.jpg" alt="la palette du goût">
-                        <h3>La palette du goût</h3>
-                        <p>Ménilmontant</p>
+                        <span class="restaurants__cardbadge">Nouveau</span>
+                        <section class=restaurants__footer>
+                            <div class="retaurants__footertext"> 
+                                <h3>La palette du goût</h3>
+                                <p>Ménilmontant</p>
+                            </div>
+                            <div class="restaurants__heart">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </section>
                     </a>
                 </div>
 
                 <div class="restaurants__cards">
-                    <a class="restaurants__card" href="pages/resto-2.html">
+                    <a  class="restaurants__card" href="pages/resto-2.html">
                         <img src="images/restaurants/menu-2.jpg" alt="la note enchantée">
-                        <h3>La note enchantée</h3>
-                        <p>Charonne</p>
+                        <span class="restaurants__cardbadge">Nouveau</span>                      
+                        <section class=restaurants__footer>
+                            <h3>La note enchantée</h3>
+                            <p>Charonne</p>
+                        </section>
                     </a>
                 </div>
 
