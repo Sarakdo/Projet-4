@@ -24,6 +24,7 @@ header {
     &__logo {
         padding: 0px 19px 0px 16px;
         height: 30px;
+        align-content: center;
         
     }
 }
@@ -89,6 +90,14 @@ body {
 
     &__icon {
         padding-right: 7px;
+    }
+}
+
+@media (max-width:1440px){
+    header{
+        &__logo{
+            align-content: center;
+        }
     }
 }
 }
