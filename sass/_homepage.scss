@@ -186,3 +186,11 @@
         height: 21px;
     }
 }
+
+@media (min-width:1440px){
+    .fonct {
+        &__steps {
+            flex-direction: row;  
+
+}
+    }}

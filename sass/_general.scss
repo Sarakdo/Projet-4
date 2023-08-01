@@ -52,8 +52,7 @@ body {
     
 }
 /** FOOTER **/
-.footer {
-    background-color: #353535;
+footer {
     &__container {
         display: flex;
         width: 375px;
@@ -61,6 +60,7 @@ body {
         flex-direction: column;
         align-items: flex-start;
         gap: 16px;
+        background-color: #353535;
     }
 
     &__logo {
@@ -93,11 +93,14 @@ body {
     }
 }
 
-@media (max-width:1440px){
-    header{
-        &__logo{
-            align-content: center;
+}
+
+@media (min-width:1440px){
+    header {
+        width:100%;
+        display: flex;
+        justify-content: center;
+                &__logo {
+                align-content: center;
         }
-    }
-}
-}
+    }}

@@ -22,6 +22,7 @@ body {
   header__logo {
     padding: 0px 19px 0px 16px;
     height: 30px;
+    align-content: center;
   }
   h2 {
     font-family: "Roboto";
@@ -43,28 +44,26 @@ body {
     margin: 0px;
   }
   /** FOOTER **/
-  .footer {
-    background-color: #353535;
-  }
-  .footer__container {
+  footer__container {
     display: flex;
     width: 375px;
     padding: 22px 25px;
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
+    background-color: #353535;
   }
-  .footer__logo {
+  footer__logo {
     color: white;
     font-family: "shrikhand";
     margin: 0;
   }
-  .footer__link {
+  footer__link {
     color: white;
     text-decoration: none;
     font-family: "roboto";
   }
-  .footer__list {
+  footer__list {
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -72,11 +71,21 @@ body {
     list-style: none;
     gap: 7px;
   }
-  .footer__listElt {
+  footer__listElt {
     margin-left: 10px;
   }
-  .footer__icon {
+  footer__icon {
     padding-right: 7px;
+  }
+}
+@media (max-width: 1440px) {
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  header__logo {
+    align-content: center;
   }
 }
 /** LOCATION **/
