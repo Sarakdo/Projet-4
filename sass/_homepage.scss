@@ -29,6 +29,12 @@
     &__text {
         margin: 0;
     }
+    & p{
+        height: 46px;
+        width: 315px;
+        
+
+    }
 
     &__subt {
         font-size: 18px;
@@ -81,6 +87,7 @@
         box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
         padding: 24px;
         margin: 16px 0px 16px 8px;
+        flex-grow:1;
         &::before {
             content: counter(numlist);
             color: white;
@@ -139,7 +146,7 @@
     }
 
     &__card {
-        text-decoration: none;
+        position: relative;
         color: inherit;
         position: relative;
 
@@ -189,8 +196,16 @@
 
 @media (min-width:1440px){
     .fonct {
+        padding:180px;
         &__steps {
-            flex-direction: row;  
-
+            gap: 40px;
+            flex-direction: row;
+        }
+    }
+    .expl {
+        &__text {
+            font-size: 40px;
+        }
+    }
+    
 }
-    }}
